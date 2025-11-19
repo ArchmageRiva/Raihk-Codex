@@ -36,3 +36,17 @@ background-size: 100% 100%;
 background: url('../UI/CodexEntryBG2.png');
 background-size: 100% 100%;
 }
+
+@media only screen and (max-height: 800px) { 
+#CodexEntryContainer {
+height: 100vh;
+}
+#CodexEntry {
+height: 100%;
+}
+}
+@media only screen and (max-width: 699px) {
+#CodexEntryContainer {
+width: 100vw;
+}
+}
