@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: TitilliumWeb;
+	background: url('../UI/CodexBG.png');
+	color: #ece6e6;
+	font-size: 17px;
+	font-family: montserrat;
+}
+
+#CodexContainer {
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#CodexEntryContainer {
+width: 700px;
+height: 942px;
+box-sizing: border-box;
+padding: 28px 35px 35px 35px;
+}
+#CodexEntry {
+width: calc(100% - 20px);
+height: 892px;
+overflow-y: auto;
+padding-right: 20px;
+}
+.BG1 {
+background: url('../UI/CodexEntryBG.png');
+}
+.BG2 {
+background: url('../UI/CodexEntryBG2.png');
+}
