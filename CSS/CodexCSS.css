@@ -49,4 +49,7 @@ height: 100%;
 #CodexEntryContainer {
 width: 100vw;
 }
+body {
+font-size: 14px;
+}
 }
