@@ -18,19 +18,21 @@ align-items: center;
 
 #CodexEntryContainer {
 width: 700px;
-height: 942px;
+height: 880px;
 box-sizing: border-box;
-padding: 28px 35px 35px 35px;
+padding: 20px 35px 35px 35px;
 }
 #CodexEntry {
 width: calc(100% - 20px);
-height: 892px;
+height: 838px;
 overflow-y: auto;
 padding-right: 20px;
 }
 .BG1 {
 background: url('../UI/CodexEntryBG.png');
+background-size: 100% 100%;
 }
 .BG2 {
 background: url('../UI/CodexEntryBG2.png');
+background-size: 100% 100%;
 }
