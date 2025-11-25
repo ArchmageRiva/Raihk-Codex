@@ -37,6 +37,86 @@ background: url('../UI/CodexEntryBG2.png');
 background-size: 100% 100%;
 }
 
+#ComputerContainer {
+width: 48vw;
+height: 100vh;
+display: block;
+margin: 0 auto;
+}
+#ComputerLoginContainer {
+display: grid;
+grid-template-columns: auto auto;
+column-gap: 10px;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#ComputerLoginContainer input {
+display: block;
+border: none;
+border: 1px solid #00d9ff;
+height: 25px;
+background: #17272a;
+color: white;
+padding: 2px;
+box-sizing: border-box;
+font-size: 18px;
+}
+#ComputerLoginContainer input:focus {
+background-color: #124d58;
+outline: none;
+}
+#ComputerLoginContainer button {
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#LoginErrorMessages {
+text-align: center;
+background: red;
+color: black;
+border-radius: 5px;
+margin-top: 10px;
+visibility: hidden;
+}
+#EkkoranTerminal {
+background: rgba(0,0,0,0.1);
+display: none;
+width: 100%;
+height: 100%;
+padding: 25px;
+box-sizing: border-box;
+position: relative;
+}
+#TerminalMessages {
+position: absolute;
+bottom: 0;
+left: 0;
+height: 150px;
+padding: 20px;
+box-sizing: border-box;
+width: 100%;
+border-top: 2px solid gray;
+}
+#TerminalMessages li:hover {
+cursor: pointer;
+color: #00d9ff;
+}
+.Message {
+display: none;
+height: calc(100% - 150px);
+overflow-y: scroll;
+}
+.TerminalMenu {
+display: none;
+}
+
+
+
 @media only screen and (max-height: 800px) { 
 #CodexEntryContainer {
 height: 100vh;
@@ -51,5 +131,10 @@ width: 100vw;
 }
 body {
 font-size: 14px;
+}
+}
+@media only screen and (max-width: 1000px) {
+#ComputerContainer {
+width: 100vw;
 }
 }
