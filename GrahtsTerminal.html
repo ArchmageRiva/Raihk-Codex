@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graht's Terminal</title>
+	<link rel="icon" type="image/x-icon" href="UI/CodexFavicon.ico">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/CodexCSS.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<section id="ComputerContainer">
+	<section id="ComputerLoginContainer">
+		<div><input id="Login-Password" type="password"></input></div> <button class="LoginButton" onclick="AttemptLoginGraht()">>></button>
+		<div id="LoginErrorMessages">Incorrect password.</div>
+	</section>
+	
+	<section id="EkkoranTerminal">
+		<div id="EkkoranTerminalHome" class="Message">
+			<p>Welcome home, Graht Podturn.</p>		
+			<p>You have unread messages.</p>
+		</div>
+		
+		<div id="Message1" class="Message">
+			<div><b>From:</b> Klek</div>
+			<div><b>To:</b> Graht Poolturn</div>
+			<div><b>Subject:</b> RE: Fish</div>
+			
+			<br><hr>
+			
+			<p>Graht,</p>
+			
+			<p>I'm so sorry that I forgot to ask ahead of time, but I need someone to look after my fish for the duration of my vacation. Would you be willing to help me? You can find a jar of fish food in my refrigerator.</p>
+			
+			<p>Again, I'm sorry I didn't ask this sooner.</p>
+			
+			<div>Regards,</div>
+			<div>Klek</div>
+			<div>Assistant to Councilor Ekkoran Arbortail</div>
+		</div>
+		
+		<div id="Message2" class="Message">
+			<div><b>From:</b> Kazzaralik</div>
+			<div><b>To:</b> Graht Podturn</div>
+			<div><b>Subject:</b> RE: RE: Next Shipment</div>
+			
+			<br><hr>
+			
+			<p>Podturn,</p>
+			
+			<p>There's no need to be aggressive. I'll have your next shipment forwarded to the usual spot.</p>
+			
+			<div>- Your friend, Kazzaralik</div>			
+		</div>
+		
+		<div id="Message3" class="Message">			
+			<div><b>From:</b> Graht Podturn</div>
+			<div><b>To:</b> Kazzaralik</div>
+			<div><b>Subject:</b> RE: Next Shipment</div>
+			
+			<br><hr>
+			
+			<p>He already knows, dumbass.</p>
+		</div>
+		
+		<div id="Message4" class="Message">
+			<div><b>From:</b> Kazzaralik</div>
+			<div><b>To:</b> Graht Podturn</div>
+			<div><b>Subject:</b> Next Shipment</div>
+			
+			<br><hr>
+			
+			<p>Podturn,</p>
+			
+			<p>I've been considering the next shipment of dihydroclaramine. Our usual routes are getting harder to move through thanks to a crackdown by the Cess. As such, your next shipment might be delayed - unless, of course, you're able to lubricate the process with a few cripps. You know my number. Route 5k through and we should be fine.</p>
+			
+			<p>Oh, and don't think about trying to double-cross me. I know who you work for, and it'd be a terrible shame if Mr. Arbortail found out about your pills.</p>
+			
+			<div>- Your friend, Kazzaralik</div>
+			
+		</div>
+		
+		<div id="Message5" class="Message">
+			<div><b>From:</b> Ekkoran Arbortail</div>
+			<div><b>To:</b> Graht Podturn</div>
+			<div><b>Subject:</b> Regarding Klek</div>
+			
+			<br><hr>
+			
+			<p>Graht,</p>
+			
+			<p>I know that you and Klek have been flirting. Your attempts to hide it are both hilarious and adorable. If you wish to court Klek further, I suggest a movie night. He has a particular love of cheesy romance movies. I hear that <i>Storm-Sparked Night</i> is of particular interest to him. I can arrange a private viewing if you want some time to canoodle.</p>
+			
+			<div>- Ekkoran</div>
+		</div>
+		
+		<div id="Message6" class="Message">
+			<div><b>From:</b> Ekkoran Arbortail</div>
+			<div><b>To:</b> Narazz Starmantle</div>
+			<div><b>Subject:</b> Your Behavior</div>
+			
+			<br><hr>
+			
+			<p>Narazz,</p>
+			
+			<p>I understand that, as a fresh-faced Councilor, you are experimenting with throwing your weight around. However, your new rank does <i>not</i> give you the right to verbally assault me, especially unprovoked and doubly-so in public. I expect a full public apology for your idiotic behavior by tomorrow afternoon, or I will file a complaint with the Councillia Satellite and have your record marked for the rest of your life. You have a promising career ahead of you: start it on the right foot, lest you step on a mine.</p>
+			
+			<p>Though it was a frightfully low bar, surely your father raised you to behave better than to act like a spoiled brat. Get your act together.</p>
+			
+			<div>- Councilor Ekkoran Arbortail</div>
+			
+		</div>
+		
+		<div id="Message7" class="Message">
+			<div><b>From:</b> Klek</div>
+			<div><b>To:</b> Ekkoran Arbortail</div>
+			<div><b>Subject:</b> Backup Passwords</div>
+			
+			<br><hr>
+			
+			<p>Ekkoran,</p>
+			
+			<p>Here are this month's passwords!</p>
+			
+			<p>Klek: KnightInShiningArmor470</p>
+			<p>Graht: 8816twelve</p>
+			
+			<div>- Klek</div>
+			
+		</div>
+		
+		<section id="TerminalMessages">
+			<ol id="MainMenu" class="TerminalMenu">
+				<li onclick="UnreadMessages()">[Unread Messages]</li>
+				<li onclick="OldMessages()">[Old Messages]</li>
+				<!--<li onclick="Journal()">[Journal]</li>-->
+			</ol>
+			<ol id="UnreadMessages" class="TerminalMenu">
+				<li onclick="Message2()">[RE: RE: Next Shipment]</li>
+				<li onclick="ReturnToRoot()">[Return to Root]</li>
+			</ol>
+			<ol id="OldMessages" class="TerminalMenu">
+				<li onclick="Message5()">[Regarding Klek]</li>
+				<li onclick="Message1()">[Fish]</li>
+				<li onclick="Message3()">[RE: Next Shipment]</li>
+				<li onclick="Message4()">[Next Shipment]</li>
+				<li onclick="ReturnToRoot()">[Return to Root]</li>
+			</ol>
+		</section>
+	</section>
+
+</section>
+</body>
+
+<script>
+function AttemptLoginGraht() {
+const enteredPassword = document.getElementById("Login-Password").value; // This is the value of the password div.
+const ErrorMessage = document.getElementById("LoginErrorMessages") // This is where Error Messages will pop up.
+const CorrectPassword = "8816twelve"; // This is the password.
+// Checks password.
+if (enteredPassword === CorrectPassword)  { // Checks for "8816twelve".
+	OpenEkkoranTerminal();
+	TerminalYes();
+} else {
+	ErrorMessage.style.visibility = "visible" ;
+	TerminalNo();
+}
+}
+
+function OpenEkkoranTerminal() {
+const LoginContainer = document.getElementById("ComputerLoginContainer")
+const EkkoranTerminal = document.getElementById("EkkoranTerminal")
+LoginContainer.style.display = "none";
+EkkoranTerminal.style.display = "block";
+document.getElementById("EkkoranTerminalHome").style.display = "block";
+ReturnToRoot();
+}
+
+function HideMenus() {
+var menus = document.getElementsByClassName('TerminalMenu');
+for (var i = 0; i < menus.length; i++) {
+    menus[i].style.display = "none";
+}
+}
+function ReturnToRoot() {
+TerminalNo();
+HideMenus();
+HideMessages();
+document.getElementById("MainMenu").style.display = "block";
+document.getElementById("EkkoranTerminalHome").style.display = "block";
+}
+function UnreadMessages() {
+TerminalNo();
+HideMenus();
+document.getElementById("UnreadMessages").style.display = "block";
+}
+function OldMessages() {
+TerminalNo();
+HideMenus();
+document.getElementById("OldMessages").style.display = "block";
+}
+function Journal() {
+TerminalNo();
+HideMenus();
+document.getElementById("Journal").style.display = "block";
+}
+
+
+function HideMessages() {
+var messages = document.getElementsByClassName('Message');
+for (var i = 0; i < messages.length; i++) {
+    messages[i].style.display = "none";
+}
+}
+function Message1() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message1").style.display = "block";
+}
+function Message2() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message2").style.display = "block";
+}
+function Message3() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message3").style.display = "block";
+}
+function Message4() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message4").style.display = "block";
+}
+function Message5() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message5").style.display = "block";
+}
+function Message6() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message6").style.display = "block";
+}
+function Message7() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message6").style.display = "block";
+}
+
+
+
+
+function TerminalYes() {
+audio = new Audio('UI/Terminal_Yes.mp3');
+audio.loop = false; // Set to loop if desired
+audio.volume = 1; // Set volume
+audio.play(); // Play the new audio
+}
+function TerminalNo() {
+audio = new Audio('UI/Terminal_No.mp3');
+audio.loop = false; // Set to loop if desired
+audio.volume = 1; // Set volume
+audio.play(); // Play the new audio
+}
+
+</script>
+
+</html>

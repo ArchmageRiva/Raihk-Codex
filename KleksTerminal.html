@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Klek's Terminal</title>
+	<link rel="icon" type="image/x-icon" href="UI/CodexFavicon.ico">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/CodexCSS.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<section id="ComputerContainer">
+	<section id="ComputerLoginContainer">
+		<div><input id="Login-Password" type="password"></input></div> <button class="LoginButton" onclick="AttemptLoginKlek()">>></button>
+		<div id="LoginErrorMessages">Incorrect password.</div>
+	</section>
+	
+	<section id="EkkoranTerminal">
+		<div id="EkkoranTerminalHome" class="Message">
+			<p>Welcome home, Klek.</p>		
+			<p>You have unread messages.</p>
+		</div>
+		
+		<div id="Message1" class="Message">
+			<div><b>From:</b> Graht Poolturn</div>
+			<div><b>To:</b> Klek</div>
+			<div><b>Subject:</b> RE: Fish</div>
+			
+			<br><hr>
+			
+			<p>Klek,</p>
+			
+			<p>I'd be happy to look after your aquatic charges during your vacation. You needn't even ask: I intended to do it regardless.</p>
+			
+			<div>Regards,</div>
+			<div>Graht Poolturn</div>
+			<div>Assistant to Councilor Ekkoran Arbortail</div>
+			
+			<p>P.S. You know you can just ask me in-person, right? I don't bite. Not unless you request it. :)</p>
+		</div>
+		
+		<div id="Message2" class="Message">
+			<div><b>From:</b> Storm-Jump Solutions</div>
+			<div><b>To:</b> Raihk Courier Services, Complaints Department</div>
+			<div><b>Subject:</b> Your Flight #17971-71 Itinerary</div>
+			
+			<br><hr>
+			
+			<p>Dear Klek,</p>
+			
+			<p>Here is your itinerary for Flight #17971-71 to Rake Orata. Please save this for your records, as you will be required to present the information during check-in.</p>
+			
+			<div>Flight No.: 17971-71</div>
+			<div>Non-Stop</div>
+			<div>Seat No.: 12 (Councilor Class)</div>
+			<div>Departing: SJS Station 91, District 12, Hysk Prime, Terminal 6 @ 12:40PM Local Time</div>
+			<div>Arriving: SJS Station 7, Zerania, Rake Orata, Terminal 3 @ 2:10AM Local Time</div>
+			<div>- - - - - - - - - </div>
+			<div>Baggage Allowance: Unlimited</div>
+			<div>- - - - - - - - - </div>
+			<div>Ticket No.: SJS/ 012 974562731-895 for KLEK</div>
+			<div>- - - - - - - - - </div>
+			<div>Total Cost: 71,984c, Fee Included (paid for by: E. ARBORTAIL)</div>
+			<div>- - - - - - - - - </div>
+			<div>DON'T FORGET TO BRING IDENTIFICATION</div>
+			
+			<p><i>This is an automated message and reponses will not be read.</i></p>
+		</div>
+		
+		<div id="Message3" class="Message">
+			<div><b>From:</b> Klek</div>
+			<div><b>To:</b> Unknown User</div>
+			<div><b>Subject:</b> RE: HIL Update</div>
+			
+			<br><hr>
+			
+			<p>Don't contact me like this. We'll talk in person.</p>
+		</div>
+		
+		<div id="Message4" class="Message">
+			<div><b>From:</b> Unknown User</div>
+			<div><b>To:</b> Klek</div>
+			<div><b>Subject:</b> HIL Update</div>
+			
+			<p><i>The contents of this message have been deleted pending review by: Councilor Ekkoran Arbortail</i></p>
+			
+		</div>
+		
+		<div id="Message5" class="Message">
+			<div><b>From:</b> Klek</div>
+			<div><b>To:</b> Stormproofer's Marketing Department</div>
+			<div><b>Subject:</b> RE: An Exciting Opportunity!</div>
+			
+			<br><hr>
+			
+			<p>To whomsoever it may concern,</p>
+			
+			<p>This is an official Council Corporatis terminal and any further attempts to solicit the Councilor will be met with legal action.</p>
+			
+			<div>Regards,</div>
+			<div>Klek</div>
+			<div>Assistant to Councilor Ekkoran Arbortail</div>			
+		</div>
+		
+		<div id="Message6" class="Message">
+			<div><b>From:</b> Ekkoran Arbortail</div>
+			<div><b>To:</b> Narazz Starmantle</div>
+			<div><b>Subject:</b> Your Behavior</div>
+			
+			<br><hr>
+			
+			<p>Narazz,</p>
+			
+			<p>I understand that, as a fresh-faced Councilor, you are experimenting with throwing your weight around. However, your new rank does <i>not</i> give you the right to verbally assault me, especially unprovoked and doubly-so in public. I expect a full public apology for your idiotic behavior by tomorrow afternoon, or I will file a complaint with the Councillia Satellite and have your record marked for the rest of your life. You have a promising career ahead of you: start it on the right foot, lest you step on a mine.</p>
+			
+			<p>Though it was a frightfully low bar, surely your father raised you to behave better than to act like a spoiled brat. Get your act together.</p>
+			
+			<div>- Councilor Ekkoran Arbortail</div>
+			
+		</div>
+		
+		<div id="Message7" class="Message">
+			<div><b>From:</b> Klek</div>
+			<div><b>To:</b> Ekkoran Arbortail</div>
+			<div><b>Subject:</b> Backup Passwords</div>
+			
+			<br><hr>
+			
+			<p>Ekkoran,</p>
+			
+			<p>Here are this month's passwords!</p>
+			
+			<p>Klek: KnightInShiningArmor470</p>
+			<p>Graht: 8816twelve</p>
+			
+			<div>- Klek</div>
+			
+		</div>
+		
+		<section id="TerminalMessages">
+			<ol id="MainMenu" class="TerminalMenu">
+				<li onclick="UnreadMessages()">[Unread Messages]</li>
+				<li onclick="OldMessages()">[Old Messages]</li>
+				<!--<li onclick="Journal()">[Journal]</li>-->
+			</ol>
+			<ol id="UnreadMessages" class="TerminalMenu">
+				<li onclick="Message1()">[RE: Fish]</li>
+				<li onclick="ReturnToRoot()">[Return to Root]</li>
+			</ol>
+			<ol id="OldMessages" class="TerminalMenu">
+				<li onclick="Message2()">[Your Flight #17971-71 Itinerary]</li>
+				<li onclick="Message3()">[RE: HIL Update]</li>
+				<li onclick="Message4()">[HIL Update]</li>
+				<li onclick="Message5()">[RE: An Exciting Opportunity!]</li>
+				<li onclick="ReturnToRoot()">[Return to Root]</li>
+			</ol>
+		</section>
+	</section>
+
+</section>
+</body>
+
+<script>
+function AttemptLoginKlek() {
+const enteredPassword = document.getElementById("Login-Password").value; // This is the value of the password div.
+const ErrorMessage = document.getElementById("LoginErrorMessages") // This is where Error Messages will pop up.
+const CorrectPassword = "KnightInShiningArmor470"; // This is the password.
+// Checks password.
+if (enteredPassword === CorrectPassword)  { // Checks for "KnightInShiningArmor470".
+	OpenEkkoranTerminal();
+	TerminalYes();
+} else {
+	ErrorMessage.style.visibility = "visible" ;
+	TerminalNo();
+}
+}
+
+function OpenEkkoranTerminal() {
+const LoginContainer = document.getElementById("ComputerLoginContainer")
+const EkkoranTerminal = document.getElementById("EkkoranTerminal")
+LoginContainer.style.display = "none";
+EkkoranTerminal.style.display = "block";
+document.getElementById("EkkoranTerminalHome").style.display = "block";
+ReturnToRoot();
+}
+
+function HideMenus() {
+var menus = document.getElementsByClassName('TerminalMenu');
+for (var i = 0; i < menus.length; i++) {
+    menus[i].style.display = "none";
+}
+}
+function ReturnToRoot() {
+TerminalNo();
+HideMenus();
+HideMessages();
+document.getElementById("MainMenu").style.display = "block";
+document.getElementById("EkkoranTerminalHome").style.display = "block";
+}
+function UnreadMessages() {
+TerminalNo();
+HideMenus();
+document.getElementById("UnreadMessages").style.display = "block";
+}
+function OldMessages() {
+TerminalNo();
+HideMenus();
+document.getElementById("OldMessages").style.display = "block";
+}
+function Journal() {
+TerminalNo();
+HideMenus();
+document.getElementById("Journal").style.display = "block";
+}
+
+
+function HideMessages() {
+var messages = document.getElementsByClassName('Message');
+for (var i = 0; i < messages.length; i++) {
+    messages[i].style.display = "none";
+}
+}
+function Message1() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message1").style.display = "block";
+}
+function Message2() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message2").style.display = "block";
+}
+function Message3() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message3").style.display = "block";
+}
+function Message4() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message4").style.display = "block";
+}
+function Message5() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message5").style.display = "block";
+}
+function Message6() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message6").style.display = "block";
+}
+function Message7() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message6").style.display = "block";
+}
+
+
+
+
+function TerminalYes() {
+audio = new Audio('UI/Terminal_Yes.mp3');
+audio.loop = false; // Set to loop if desired
+audio.volume = 1; // Set volume
+audio.play(); // Play the new audio
+}
+function TerminalNo() {
+audio = new Audio('UI/Terminal_No.mp3');
+audio.loop = false; // Set to loop if desired
+audio.volume = 1; // Set volume
+audio.play(); // Play the new audio
+}
+
+</script>
+
+</html>
