@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arbortail's Computer</title>
+	<link rel="icon" type="image/x-icon" href="UI/CodexFavicon.ico">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/CodexCSS.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<section id="ComputerContainer">
+	<section id="ComputerLoginContainer">
+		<div><input id="Login-Password" type="password"></input></div> <button class="LoginButton" onclick="AttemptLoginEkkoran()">>></button>
+		<div id="LoginErrorMessages">Incorrect password.</div>
+	</section>
+	
+	<section id="EkkoranTerminal">
+		<div id="EkkoranTerminalHome" class="Message">
+			<p>Welcome home, Ekkoran Arbortail.</p>		
+			<p>You have unread messages.</p>
+		</div>
+		
+		<div id="Message1" class="Message">
+			<div><b>From:</b> Kizz Goldenroot</div>
+			<div><b>To:</b> Ekkoran Arbortail</div>
+			<div><b>Subject:</b> RE: Hyskarran Independence League Meeting</div>
+			
+			<br><hr>
+			
+			<p>Councilor Arbortail,</p>
+			
+			<p>Mr. Marbleslide regrets to inform you that, due to your refusal to meet him aboard <i>Appetite's End</i>, he is summarily canceling the meeting titled &ldquo;Hyskarran Independence League.&rdquo; All associated meeting notes and itinerary will be deleted pending your approval.</p>
+			
+			<div>Glory to the Ascendancy,</div>
+			<div>Kizz Goldenroot</div>
+			<div>Assistant to Councilor Fyrizz Marbleslide</div>
+		</div>
+		
+		<div id="Message2" class="Message">
+			<div><b>From:</b> Ekkoran Arbortail</div>
+			<div><b>To:</b> Raihk Courier Services, Complaints Department</div>
+			<div><b>Subject:</b> Shipment Delay</div>
+			
+			<br><hr>
+			
+			<p>To whom it may concern,</p>
+			
+			<p>This is the third time a Raptris Minor has been delivered to me in a nearly-dead state thanks to significant shipment delays. When taken from their native soil, these plants are delicate, and must be treated with the utmost care. Furthermore, they mean a great deal to me. While I understand that shipping plants is a difficult process, especially in regards to border delays, I find the lack of communication from your office to be deeply disappointing.</p>
+			
+			<p>Additionally, I ask that, in future correspondences to my assistant, you treat him with the respect he deserves. If your agents are unable to perform their duties with the smallest modicum of politeness, then I will initiative punitive action.</p>
+			
+			<p>Please contact my assistant, Graht Poolturn, with a full personal apology to him and an update regarding how you intend to correct this situation to everyone's satisfaction.</p>
+			
+			<div>- Councilor Ekkoran Arbortail</div>
+		</div>
+		
+		<div id="Message3" class="Message">
+			<div><b>From:</b> Councillia Satellite Automated Complaints Drone #768</div>
+			<div><b>To:</b> Ekkoran Arbortail</div>
+			<div><b>Subject:</b> WARNING! Automated Complaint Registered Against You</div>
+			
+			<br><hr>
+			
+			<p>Councilor Ekkoran Arbortail,</p>
+			
+			<p>A complaint has been filed against you by a fellow Councilor. Details follow:</p>
+			
+			<div>Case Number: 7781782</div>
+			<div>Complaint Filed By: Narazz Starmantle</div>
+			<div>Complaint Body: &ldquo;Failure to uphold Hysk Appetite, and in so doing putting self and all hysk in danger&rdquo;</div>
+			
+			<p>A permanent note has been added to your dossier.</p>
+			
+			<p>If you wish to denounce the complaint, please respond with &ldquo;DENOUNCE&rdquo;. Otherwise, you may ignore this message.</p>
+			
+			<p><i>This is an automated message and responses other than &ldquo;DENOUNCE&rdquo; will be deleted.</i></p>			
+		</div>
+		
+		<div id="Message4" class="Message">
+			<div><b>From:</b> Thranlun</div>
+			<div><b>To:</b> Councilor E. Arbortail</div>
+			<div><b>Subject:</b> Invitation to &ldquo;Biomonger&rdquo; Debate</div>
+			
+			<br><hr>
+			
+			<p>Esteemed Councilor Arbortail,</p>
+			
+			<p>I bring glad tidings: my request to host a debate regarding the moral efficacy of my latest hit piece, &ldquo;Biomonger,&rdquo; has been approved, and will be taking place two weeks from now at the Rahisk Ceremonial Center, District 1, Hysk Prime. As a noted enthusiast of the fine art that is cinematography, I humbly invite you to the debates. While I imagine the moralizing by various insulted gnawe parties will be most entertaining, in truth, I intend to reveal my next project—&ldquo;Biomonger II: A Gnawe Story&rdquo;—during the closing ceremony, and you would be among the first in Raihk to see the concept trailer.</p>
+			
+			<p>Naturally, you will have your own personal camera feed recording every beautiful reaction to both the debates and the trailer, and I am particularly looking forward to offering you a personal, one-on-one, behind-the-scenes tour of the facility to discuss both it and my future projects.</p>
+			
+			<div>Humbly awaiting your response,</div>
+			<div>Thranlun</div>
+			<div>Director: <i>Biomonger</i></div>
+			<div>Director: <i>The Rahisk Tale</i></div>
+			<div>Director: <i>Dragons Are Real</i></div>
+			<div>Director: <i>Dragons Are Real II</i></div>
+			<div>Director: <i>Dragons Are Real III</i></div>
+			<div>Director: <i>Hive Mind Masquerade</i></div>
+			<div>Director: <i>Hive Mind Masquerade: The Extended Edition</i></div>
+			<div>Director: <i>Hurls-The-Frost: A Lizard's Story</i></div>
+			<div>Director: <i>Patchwork Dragon</i></div>
+			<div>Director: <i>Marblemanse Manor</i></div>
+			<div>Director: <i>Marblemanse Manor II: The Marble Falls</i></div>
+			<div>Producer: <i>Strapping Young Hyskarra</i></div>
+			<div>Producer: <i>The EKSO Story</i></div>
+			<div>Producer: <i>Shark Invasion!</i></div>
+			<div>Producer: <i>Shark Invasion! II: The Re-Sharkening</i></div>
+			<div>Producer: <i>Shark Invasion! III: Shark Re-Imagined</i></div>
+			<div>Producer: <i>Shark Invasion! IV: Shark Revelations</i></div>
+			<div>Producer: <i>Shark Invasion! V: Shark Redemption</i></div>
+			<div>Producer: <i>E.C.H.Os of Life</i></div>
+			<div>Producer: <i>Storm-Killer XVI</i></div>
+			
+		</div>
+		
+		<div id="Message5" class="Message">
+			<div><b>From:</b> Ekkoran Arbortail</div>
+			<div><b>To:</b> Klek</div>
+			<div><b>Subject:</b> RE: Vacation Request</div>
+			
+			<br><hr>
+			
+			<p>Klek,</p>
+			
+			<p>Your vacation request is granted. I will prepare a gift basket for your parents. Please send them my warmest regards.</p>
+			
+			<div>- Ekkoran</div>
+			
+		</div>
+		
+		<div id="Message6" class="Message">
+			<div><b>From:</b> Ekkoran Arbortail</div>
+			<div><b>To:</b> Narazz Starmantle</div>
+			<div><b>Subject:</b> Your Behavior</div>
+			
+			<br><hr>
+			
+			<p>Narazz,</p>
+			
+			<p>I understand that, as a fresh-faced Councilor, you are experimenting with throwing your weight around. However, your new rank does <i>not</i> give you the right to verbally assault me, especially unprovoked and doubly-so in public. I expect a full public apology for your idiotic behavior by tomorrow afternoon, or I will file a complaint with the Councillia Satellite and have your record marked for the rest of your life. You have a promising career ahead of you: start it on the right foot, lest you step on a mine.</p>
+			
+			<p>Though it was a frightfully low bar, surely your father raised you to behave better than to act like a spoiled brat. Get your act together.</p>
+			
+			<div>- Councilor Ekkoran Arbortail</div>
+			
+		</div>
+		
+		
+		
+		
+		<section id="TerminalMessages">
+			<ol id="MainMenu" class="TerminalMenu">
+				<li onclick="UnreadMessages()">[Unread Messages]</li>
+				<li onclick="OldMessages()">[Old Messages]</li>
+				<!--<li onclick="Journal()">[Journal]</li>-->
+			</ol>
+			<ol id="UnreadMessages" class="TerminalMenu">
+				<li onclick="Message4()">[Invitation to &ldquo;Biomonger&rdquo; Debate]</li>
+				<li onclick="Message1()">[RE: Hyskarran Independence League Meeting]</li>
+				<li onclick="Message3()">[WARNING! Complaint Registered Against You]</li>
+				<li onclick="ReturnToRoot()">[Return to Root]</li>
+			</ol>
+			<ol id="OldMessages" class="TerminalMenu">
+				<li onclick="Message2()">[Shipment Delay]</li>
+				<li onclick="Message5()">[RE: Vacation Request]</li>
+				<li onclick="Message6()">[Your Behavior]</li>
+				<li onclick="ReturnToRoot()">[Return to Root]</li>
+			</ol>
+		</section>
+	</section>
+
+</section>
+</body>
+
+<script>
+function AttemptLoginEkkoran() {
+const enteredPassword = document.getElementById("Login-Password").value; // This is the value of the password div.
+const ErrorMessage = document.getElementById("LoginErrorMessages") // This is where Error Messages will pop up.
+const CorrectPassword = "30959"; // This is the password.
+// Checks password.
+if (enteredPassword === CorrectPassword)  { // Checks for "30959".
+	OpenEkkoranTerminal();
+	TerminalYes();
+} else {
+	ErrorMessage.style.visibility = "visible" ;
+	TerminalNo();
+}
+}
+
+function OpenEkkoranTerminal() {
+const LoginContainer = document.getElementById("ComputerLoginContainer")
+const EkkoranTerminal = document.getElementById("EkkoranTerminal")
+LoginContainer.style.display = "none";
+EkkoranTerminal.style.display = "block";
+document.getElementById("EkkoranTerminalHome").style.display = "block";
+ReturnToRoot();
+}
+
+function HideMenus() {
+var menus = document.getElementsByClassName('TerminalMenu');
+for (var i = 0; i < menus.length; i++) {
+    menus[i].style.display = "none";
+}
+}
+function ReturnToRoot() {
+TerminalNo();
+HideMenus();
+HideMessages();
+document.getElementById("MainMenu").style.display = "block";
+document.getElementById("EkkoranTerminalHome").style.display = "block";
+}
+function UnreadMessages() {
+TerminalNo();
+HideMenus();
+document.getElementById("UnreadMessages").style.display = "block";
+}
+function OldMessages() {
+TerminalNo();
+HideMenus();
+document.getElementById("OldMessages").style.display = "block";
+}
+function Journal() {
+TerminalNo();
+HideMenus();
+document.getElementById("Journal").style.display = "block";
+}
+
+
+function HideMessages() {
+var messages = document.getElementsByClassName('Message');
+for (var i = 0; i < messages.length; i++) {
+    messages[i].style.display = "none";
+}
+}
+function Message1() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message1").style.display = "block";
+}
+function Message2() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message2").style.display = "block";
+}
+function Message3() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message3").style.display = "block";
+}
+function Message4() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message4").style.display = "block";
+}
+function Message5() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message5").style.display = "block";
+}
+function Message6() {
+TerminalYes();
+HideMessages();
+document.getElementById("Message6").style.display = "block";
+}
+
+
+
+
+function TerminalYes() {
+audio = new Audio('UI/Terminal_Yes.mp3');
+audio.loop = false; // Set to loop if desired
+audio.volume = 1; // Set volume
+audio.play(); // Play the new audio
+}
+function TerminalNo() {
+audio = new Audio('UI/Terminal_No.mp3');
+audio.loop = false; // Set to loop if desired
+audio.volume = 1; // Set volume
+audio.play(); // Play the new audio
+}
+
+</script>
+
+</html>
