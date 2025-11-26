@@ -8,6 +8,11 @@ body {
 	font-family: montserrat;
 }
 
+@font-face {
+font-family: Martina;
+src: url('Martina.ttf');
+}
+
 #CodexContainer {
 width: 100vw;
 height: 100vh;
@@ -115,7 +120,38 @@ overflow-y: scroll;
 display: none;
 }
 
-
+#JournalContainer {
+width: 1365px;
+height: 845px;
+background: url('../UI/JournalBG.png');
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: grid;
+grid-template-columns: 50% 50%;
+font-family: Martina;
+color: black;
+font-size: 22px;
+line-height: 1;
+font-style: italic;
+}
+#Page1 {
+width: 82%;
+margin-left: 15%;
+height: 90%;
+margin-top: 5%;
+box-sizing: border-box;
+padding: 20px;
+}
+#Page2 {
+width: 82%;
+margin-left: 2%;
+height: 90%;
+margin-top: 5%;
+box-sizing: border-box;
+padding: 20px;
+}
 
 @media only screen and (max-height: 800px) { 
 #CodexEntryContainer {
@@ -136,5 +172,29 @@ font-size: 14px;
 @media only screen and (max-width: 1000px) {
 #ComputerContainer {
 width: 100vw;
+}
+}
+@media only screen and (max-width: 1365px) {
+#JournalContainer {
+display: block;
+background-size: 250% 250%;
+background-position: 15% 50%;
+position: static;
+transform: none;
+overflow-y: auto;
+width: 100vw;
+padding-bottom: 20px;
+}
+#Page1 {
+width: 100%;
+margin-left: 0;
+margin-top: 0;
+height: auto;
+}
+#Page2 {
+width: 100%;
+margin-left: 0;
+margin-top: -50px;
+height: auto;
 }
 }
